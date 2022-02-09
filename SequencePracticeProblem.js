@@ -35,3 +35,31 @@ for (let i = 0; i < 5; i++)
 // finding sum and average 
 console.log('Sum of 5 two digits number is = ' + sum);
 console.log('Average of the sum of the 5 two digits number is = ' + sum/5);
+
+
+/* UC5:- Use Script & Debug – Unit Conversion .
+         a. 1ft = 12 in then 42 in = ? ft 
+         b. Rectangular Plot of 60 feet x 40 feet in meters
+         c. Calculate area of 25 such plots in acres
+*/
+//a. Conversion from inch to feet.
+let inchs = 42;
+let ft = inchs / 12;
+console.log("42 in = " + ft + " feet");
+
+//b. Rectangular Plot of 60 feet x 40 feet in meters.
+//convert feet to meter
+let len = 60;  // 1 feet = 0.3048 metre
+let breadth = 40  // 1 sq feet = 0.3048*0.3048 = 0.0929 sq metre
+//formula for rectangle area
+let area = (len*breadth);
+let areas = (area * 0.0929).toFixed(2);
+console.log('area in sq metres = ' + areas + ' sq-m');
+
+//calculate for 25 plots
+let totalArea = areas*25;
+console.log('Total Area of 25 such plots in sq-m = ' + totalArea + " sq-m" );
+
+//c. Calculating area of 25 such plots.
+let areaInAcre = (totalArea / 4047).toFixed(2);  // 1 acre = 4047 sq-m
+console.log('Total Area of 25 such plots in acre = ' + areaInAcre +' acres');
