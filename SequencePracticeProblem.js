@@ -1,6 +1,6 @@
 // ### Sequence Practice Problems ###
 
-/* 1. Use REPL – Random Function Math.floor(Math.random() * 10); to get Single Digit. */
+/* UC1:- Use REPL – Random Function Math.floor(Math.random() * 10); to get Single Digit. */
 let Random_number = Math.floor(Math.random() * 10); 
 // let allows you to declare variables that are limited to the scope of a block statement
 console.log("Random Number is: " + Random_number); // Print Random number
@@ -13,9 +13,9 @@ console.log("Dice Number is: " + Dice_Number ); //print Dice Number
 
 /* UC3:- Add two Random Dice Number and Print the Result */
 let Dice_Number1 = Math.floor(Math.random()*6)+1;  //Dice Number between 1 to 6
-console.log(Dice_Number1 ); //print Dice Number1 
+console.log("Dice Number 1: " + Dice_Number1 ); //print Dice Number1 
 let Dice_Number2=Math.floor(Math.random()*6)+1;  //Dice Number between 1 to 6
-console.log(Dice_Number2 ); //print Dice Number2 
+console.log("Dice Number 2: " + Dice_Number2 ); //print Dice Number2 
 console.log("Sum of Two Random Dice Number:- " + (Dice_Number1+Dice_Number2)); 
 
 
